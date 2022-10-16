@@ -1,0 +1,172 @@
+@import "null.css";
+/*============ Fonts ================*/
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,italic,700,900,900italic&display");
+
+/* =========================================================== */
+
+body{
+	font-family: "Lato", sans-serif ;
+	background-color: #d3f8ec;
+}
+
+[class*="__container"]{
+	max-width: 1230px;
+	margin: 0 auto;
+}
+.wrapper {
+	/* overflow: hidden; */
+	position: relative;
+	min-height: 100%;
+	padding: 50px;
+}
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: blueviolet;
+	padding: 20px;
+	text-align: center;
+	z-index: 100;
+	
+}
+.header__menu {
+	color: white;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 700;
+	
+}
+.menu {
+}
+.menu__item {
+	display: inline-block;
+	position: relative;
+	
+}
+.menu__item:not(:last-child){
+	margin-right: 40px;
+}
+.menu__link {
+}
+
+.menu__link:hover {
+	opacity: 0.5;
+}
+/* ============================================== */
+.sub-menu{
+	background-color: #8fd1bb;
+	padding: 15px;
+	min-width: 120px;
+	position: absolute;
+	top: 120%;
+	left: 0px;
+	font-size: 15px;
+	line-height: 1.2;
+	font-weight: 500;
+	opacity: 0;
+	visibility: hidden;
+}
+.menu__item:hover .sub-menu {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* ============================================== */
+
+.sectoin {
+	background-color: antiquewhite;
+	margin-top: 50px;
+	padding: 50px;
+	min-height: 500px;
+	box-shadow: 5px 5px 5px 5px  #000;
+}
+.section__title{
+	color: black;
+	text-align: center;
+	margin-bottom: 40px;
+	font-weight: 700;
+	line-height: 1.5;
+	
+}
+.rel__item{
+	
+	padding: 30px;
+	
+}
+.rel__item--red{
+	background-color: red;
+}
+.rel__item--green{
+	background-color: green;
+}
+.rel__item--green:hover{
+	position: relative;
+	top: 200px;
+	left: 150px;
+}
+.rel__item--blue{
+	background-color: blue;
+}
+/* ================================================================== */
+
+.section__title{
+	color: black;
+	text-align: center;
+	margin-bottom: 40px;
+	font-weight: 700;
+	line-height: 1.5;
+	
+}
+.abs{
+	position: relative;
+	
+}
+.abs__item{	
+	padding: 30px;
+}
+.abs__item--red{
+	background-color: red;
+	
+}
+.abs__item--green{
+	background-color: green;
+}
+.abs__item--green:hover{
+	position: absolute;
+	top: 200px;
+	left: 150px;
+}
+.abs__item--blue{
+	background-color: blue;
+}
+/* ============================================ */
+.section-car{
+	background: url(../img/фон.jpg) 0 0/100% 100%  no-repeat;
+}
+.car {
+	position: relative;
+}
+.car__wheet {
+	position: relative;
+	left: 400px;
+	top: 215px;
+}
+.car__wheet-left {
+	position: relative;
+	left: 696px;
+	top: 140px;
+}
+.car__glass {
+	position: relative;
+	bottom: 26px;
+	left: 520px;
+	z-index: 2;
+}
+.car__body {
+	position: relative;
+	bottom: 100px;
+	left: 350px ;
+}
+
+
